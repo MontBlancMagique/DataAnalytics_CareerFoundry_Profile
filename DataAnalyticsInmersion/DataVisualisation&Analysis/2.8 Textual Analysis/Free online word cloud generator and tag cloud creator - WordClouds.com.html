@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Free online word cloud generator and tag cloud creator - WordClouds.com</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Zygomatic">
+	<!-- Programming by WebGear, webgear.nl -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+	<link rel="preconnect" href="https://www.googleanalytics.com">
+	<link rel="preconnect" href="https://adservice.google.com">
+	<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+	<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+	<link rel="preconnect" href="https://tpc.googlesyndication.com">
+	<link rel="preconnect" href="https://www.googletagservices.com">
+	<meta name="description" content="Wordclouds.com is a free online word cloud generator and tag cloud generator, similar to Wordle. Create your own word clouds and tag clouds. Paste text or upload documents and select shape, colors and font to create your own word cloud. Wordclouds.com can also generate clickable word clouds with links (image map). Save or share the resulting image.">
+	<meta property="og:title" content="Free online word cloud generator and tag cloud creator">
+	<meta property="og:site_name" content="wordclouds.com">
+	<meta property="og:image" content="https://www.wordclouds.com/pics/logo-fb-en.png">
+	<meta property="og:description" content="Wordclouds.com is a free online word cloud generator and tag cloud generator, similar to Wordle. Create your own word clouds and tag clouds. Paste text or upload documents and select shape, colors and font to create your own word cloud. Wordclouds.com can also generate clickable word clouds with links (image map). Save or share the resulting image.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.wordclouds.com/">
+	<link rel="alternate" hreflang="en" href="https://www.wordclouds.com/">
+	<link rel="alternate" hreflang="en-gb" href="https://www.wordclouds.co.uk/">
+	<link rel="alternate" hreflang="nl" href="https://www.woordwolk.nl/">
+	<link rel="alternate" hreflang="de" href="https://www.wortwolken.com/">
+	<link rel="alternate" hreflang="es" href="https://www.nubedepalabras.es/">
+	<link rel="alternate" hreflang="fr" href="https://www.nuagesdemots.fr/">
+	<script type="application/ld+json"> { "@context": "http://schema.org", "@type": "Organization", "name": "Zygomatic", "description": "Zygomatic is a publisher and developer of online games and websites.", "url": "https://www.zygomatic.com", "logo": "https://www.zygomatic.com/pics/logo-ldjson.png", "address": { "@type": "PostalAddress", "streetAddress": "Rigaweg 19", "addressLocality": "Amersfoort", "addressCountry": "NL", "postalCode": "3825 PP" }, "contactPoint": { "@type": "contactPoint", "contactType": "Customer Service", "email": "support@zygomatic.com", "telephone": "+31-683901055" }, "sameAs": [ "https://www.linkedin.com/company/zygomatic/", "https://x.com/zygomaticnl" ] } </script>
+	<link rel="stylesheet" href="/css/?v=4.10" type="text/css">
+	<link rel="stylesheet" href="/css/fontawesome.min.css?v=4.10">
+	<link rel="stylesheet" href="/css/icomoon.min.css?v=4.10">
+	<link rel="stylesheet" href="/css/mapglyphs.min.css?v=4.10">
+	<link rel="stylesheet" href="/css/icofont.min.css?v=4.10">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!--<link href="https://fonts.googleapis.com/css2?&display=swap" rel="stylesheet">-->
+	<link href="https://fonts.googleapis.com/css2?family=Bowlby+One:wght@400&amp;family=Righteous:wght@400&amp;family=Russo+One:wght@400&amp;family=Cherry+Bomb+One:wght@400&amp;family=Alfa+Slab+One:wght@400&amp;family=Titan+One:wght@400&amp;family=Paytone+One:wght@400&amp;family=Londrina+Solid:wght@400&amp;family=Dosis:wght@400&amp;family=IBM+Plex+Sans:wght@400&amp;family=IBM+Plex+Serif:wght@400&amp;family=Pacifico&amp;family=Recursive:wght@400&amp;family=Material+Icons&display=swap" rel="stylesheet">
+
+	<script defer src="/js/?lang=en&amp;v=4.10"></script>
+	<script defer src="/js/?v=4.10&amp;static"></script>
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			Page.init();
+			App.init();
+		})
+	</script>
+</head>
+<body>
+
+<div id="preloader" style="position:fixed;inset:0;z-index:9999;background-color:#8499a9"><div><span></span><span></span></div></div>
+
+<div id="zygomaticBar"><div><a href="https://www.photoeditor.com" title="Photo Editor Free Online" target="zygomatic"><i class="photoeditor"></i> <span>Photo Editor</span></a></div><div><a href="https://www.stripbackground.com" title="Remove backgrounds from images" target="zygomatic"><i class="stripbackground"></i> <span>Strip Background</span></a></div><div><a href="https://www.annotation.com" title="Annotate PDF documents, images, maps and screenshots" target="zygomatic"><i class="annotation"></i> <span>Annotation</span></a></div><div><a href="https://www.mindclouds.com" title="Online Mind Map Maker" target="zygomatic"><i class="mindclouds"></i> <span>Mind clouds</span></a></div><div><a href="https://www.photocollage.com" title="Photo Collage Maker" target="zygomatic"><i class="collage"></i> <span>Photo Collage</span></a></div><div><a href="https://www.2img.com" title="In-browser (bulk) image conversion" target="zygomatic"><i class="twoimg"></i> <span>Image conversion</span></a></div><div class="more"><i></i>More <span class="caret"></span><ul class="dropdownMenu"><li><a href="https://www.postermaker.com" title="Online Poster maker, Online Poster and Flyer Designer" target="zygomatic"><i class="postermaker"></i> Poster Maker</a></li><li><a href="https://www.chartle.com" title="Online Chart and Graph maker" target="zygomatic"><i class="chartle"></i> Chartle</a></li><li><a href="https://www.photoresizer.com" title="Resize and Crop Photos" target="zygomatic"><i class="photoresizer"></i> Photo Resizer</a></li><li><a href="https://www.maproute.com" title="Find and create routes" target="zygomatic"><i class="maproute"></i> Map Route</a></li><li><a href="https://www.phideo.com" title="Video Slideshow maker" target="zygomatic"><i class="phideo"></i> Phideo</a></li><li><a href="https://www.photofilters.com" title="Photo filters and image effects" target="zygomatic"><i class="photofilters"></i> Photo Filters</a></li><li><a href="https://www.qrapp.com" title="QR code generator and scanner" target="zygomatic"><i class="qrapp"></i> QR App</a></li><li><a href="https://www.coloringonline.com" title="Online coloring books and pages" target="zygomatic"><i class="coloring"></i> Coloring Online</a></li><li><a href="https://www.youtubetrimmer.com" title="Trim and Crop Youtube videos" target="zygomatic"><i class="youtubetrimmer"></i> Youtube Trimmer</a></li><li><a href="https://www.fakechatapp.com" title="Create fake chats" target="zygomatic"><i class="fakechatapp"></i> Fake Chat App</a></li><li><a href="https://www.mapimage.com" title="Static map image generator" target="zygomatic"><i class="mapimage"></i> Map Image</a></li><li><a href="https://www.toonytool.com" title="Free Online Cartoon and Comic Strip Maker" target="zygomatic"><i class="toonytool"></i> Toony Tool</a></li><li><a href="https://www.wordclouds.com" title="Word cloud generator" target="zygomatic"><i class="wordcloud"></i> Word Clouds</a></li><li><a href="https://www.changefaces.com" title="Change the face on a photo and do a face swap" target="zygomatic"><i class="changefaces"></i> Change Faces</a></li><li><a href="https://www.photoenlarger.com" title="Enlarge images and photos" target="zygomatic"><i class="photoenlarger"></i> Photo Enlarger</a></li><li><a href="https://www.files2zip.com" title="Zip and unzip files online" target="zygomatic"><i class="files2zip"></i> Files2Zip</a></li><li><a href="https://www.2pdfconverter.com" title="Convert documents to PDF and PDF to other document formats" target="zygomatic"><i class="docconverter"></i> PDF converter</a></li><li><a href="https://tools.zygomatic.com/" title="Tools forum" target="zygomatic"><i class="zygotools"></i> Tools forum</a></li></ul></div></div>
+<nav class="navbar bg-body-tertiary navbar-expand-md border-bottom">
+	<div class="container-fluid">
+
+		<a class="navbar-brand" href="/" title="WordClouds">
+			<img src="/pics/logo.png" alt="WordClouds">WordClouds.com
+		</a>
+
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWC" aria-controls="navbarWC" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarWC">
+			<ul class="navbar-nav ms-auto align-items-center">
+				<li class="nav-item">
+					<a class="nav-link" href="https://classic.wordclouds.com/"><b>Classic site</b></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/gallery/">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/faq/">FAQ</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://tools.zygomatic.com/c/word-clouds-maker-tool" target="_blank"><i class="fas fa-comments"></i> Forum</a>
+				</li>
+				<li class="nav-item" id="donateBtn">
+					<a class="nav-link" href="https://paymentlink.mollie.com/payment/Pno6BDZRZwzl0FEC5neGc/" target="_blank" rel="nofollow"><i class="fas fa-lg fa-donate"></i> Support us</a>
+				</li>
+				<li id="langDropdown" class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarLangDropdown" data-bs-toggle="dropdown">
+						<div class="flag en" title="en" style="margin-bottom:-4px"></div>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarLangDropdown" style="min-width:0"><a class="dropdown-item" href="https://www.wordclouds.co.uk/" title="WordClouds.co.uk"><div class="flag en-gb" title="en-gb"></div></a><a class="dropdown-item" href="https://www.woordwolk.nl/" title="Woordwolk.nl"><div class="flag nl" title="nl"></div></a><a class="dropdown-item" href="https://www.wortwolken.com/" title="Wortwolken.com"><div class="flag de" title="de"></div></a><a class="dropdown-item" href="https://www.nubedepalabras.es/" title="NubeDePalabras.es"><div class="flag es" title="es"></div></a><a class="dropdown-item" href="https://www.nuagesdemots.fr/" title="NuagesDeMots.fr"><div class="flag fr" title="fr"></div></a>
+					</div>
+				</li>
+
+				<li>
+					<div class="btn-group btn-group-sm" role="group" title="Theme switcher">
+						<input type="radio" class="btn-check" name="color-scheme" value="auto" id="theme1">
+						<label class="btn btn-outline-secondary" for="theme1">Auto</label>
+
+						<input type="radio" class="btn-check" name="color-scheme" value="light" id="theme2">
+						<label class="btn btn-outline-secondary" for="theme2"><i class="fa-solid fa-sun"></i></label>
+						<input type="radio" class="btn-check" name="color-scheme" value="dark" id="theme3">
+						<label class="btn btn-outline-secondary" for="theme3"><i class="fa-solid fa-moon"></i></label>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container-fluid">
+	<div class="banner top">
+		<!-- AdSense banner --><div class="adsbygoogle" style="display:inline-block;" data-ad-client="ca-pub-5029257013560698" data-ad-slot="9396529499"></div>
+	<!-- /AdSense banner -->	</div>
+
+	<div id="introDiv" class="alert alert-dismissible pe-4 alert-light">
+		<img src="/pics/logo-fb-en.png" alt="WordClouds.com" style="float:right;height:120px">
+		<h1 class="alert-heading">Free online Wordcloud generator</h1>
+		<P>Wordclouds.com is a free online word cloud generator and tag cloud creator. Wordclouds.com works on your PC, Tablet or smartphone. Paste text, upload a document or open an URL to automatically generate a word- or tag cloud. Or enter individual words manually in the word list. Pick a shape, select colors and fonts and choose how to draw the words. Wordclouds.com can also generate clickable word clouds with links (image map). When you are satisfied with the result, save the image and share it online. Use the <a href="#" data-bs-toggle="modal" data-bs-target="#wizardModal">wizard</a> to quickly generate a word cloud with some basic options and standard settings.</p>
+		<button type="button" class="btn-close" onclick="$(this.parentNode).hide()"></button>
+	</div>
+
+	<div id="menuBar">
+		<div class="nav nav-pills p-1">
+
+			<div class="nav-item dropdown" id="wizFileMenu">
+				<button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					File				</button>
+
+				<div class="dropdown-menu" id="fileMenu">
+					<a href="#" class="dropdown-item" data-task="saveImageAs,sd">Save as image <i class="icon-sd fa-lg"></i></a>
+					<a href="#" class="dropdown-item" data-task="saveImageAs,hd">Save as image <i class="icon-hd fa-lg"></i></a>
+					<a href="#" class="dropdown-item" data-task="saveVideo">Save as video <i class="fas fa-film"></i></a>
+					<a href="#" class="dropdown-item" data-task="shareImage">Save/Share online <i class="fab fa-facebook-f"></i> <i class="fab fa-x-twitter"></i></a>
+					<a href="#" class="dropdown-item" data-task="printImage">Print <i class="fas fa-print"></i></a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item" data-task="newWordcloud">New word cloud</a>
+					<a href="#" class="dropdown-item" data-task="openWordcloud">Open (.wcld2)</a>
+					<a href="#" class="dropdown-item" data-task="saveWordcloud">Save (.wcld2)</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item" data-task="setCanvasBackground">Wordcloud background</a>
+					<a href="#" class="dropdown-item" data-task="setCanvasSize">Image size</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item" data-task="orderImage" title="Order a mug, poster, t-shirt…">Order a mug, poster, t-shirt… <i class="fas fa-shopping-cart"></i></a>
+					<a href="#" class="dropdown-item" data-task="editImage,photoEditor">Edit result @ photoeditor.com</a>
+					<a href="#" class="dropdown-item" data-task="editImage,posterMaker">Edit result @ postermaker.com</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item" data-task="tour">Virtual tour</a>
+					<a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#wizardModal">Wizard <i class="fa-solid fa-wand-magic-sparkles"></i></a>
+					<a href="#" class="dropdown-item" data-task="about">About</a>
+				</div>
+			</div>
+
+			<div class="nav-item dropdown" id="wizWordList">
+				<button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Words</button>
+				<div class="dropdown-menu" id="wordlistMenu">
+					<a href="#" class="dropdown-item" id="wordListBtn">Edit word list</a>
+					<div class="dropdown-divider"></div>
+					<a href="#"  class="dropdown-item" data-task="relatedWords">Generate (related) words</a>
+					<a href="#"  class="dropdown-item" data-task="extractWordsFromText">Use words from Text</a>
+					<a href="#"  class="dropdown-item" data-task="extractWordsFromPDF">Extract words from PDF document</a>
+					<a href="#"  class="dropdown-item" data-task="extractWordsFromDoc">Extract words from Office document</a>
+					<a href="#"  class="dropdown-item" data-task="extractWordsFromUrl">Extract words from web page (URL)</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item" data-task="importCSV">Import from CSV</a>
+					<a href="#"  class="dropdown-item" data-task="exportCSV">Save as CSV</a>
+				</div>
+			</div>
+
+			<div class="nav-item dropdown" id="wizShape">
+				<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shape</a>
+				<div class="dropdown-menu" id="shapeMenu"></div>
+			</div>
+
+			<div class="nav-item" id="wizFonts">
+				<button class="nav-link" id="fontsBtn">Fonts</button>
+			</div>
+			<div class="nav-item" id="wizAngles">
+				<button class="nav-link" id="anglesBtn">Direction</button>
+			</div>
+			<div class="nav-item" id="wizWarps">
+				<button class="nav-link" id="warpsBtn">Warps</button>
+			</div>
+			<div class="nav-item" id="wizTheme">
+				<button class="nav-link" id="themeBtn">Theme</button>
+			</div>
+
+			<div class="nav-item" id="wizOptions">
+				<button class="nav-link" id="optionsBtn">Options</button>
+			</div>
+
+			<div class="nav-item">
+				<button class="nav-link" id="wizardBtn" data-bs-toggle="modal" data-bs-target="#wizardModal"><i class="fa-solid fa-wand-magic-sparkles"></i> Wizard</button>
+			</div>
+
+			<div class="nav-item">
+				<button class="nav-link" id="undoBtn" title="Undo" disabled data-bs-toggle="tooltip"><i class="fa-solid fa-rotate-left"></i></button>
+			</div>
+
+			<div class="nav-item">
+				<button class="nav-link" id="redoBtn" title="Redo" disabled data-bs-toggle="tooltip"><i class="fa-solid fa-rotate-right"></i></button>
+			</div>
+
+			<div class="nav-item ms-auto">
+				<button type="button" class="nav-link" title="Randomize" data-task="randomize" data-bs-toggle="tooltip"><i class="fas fa-shuffle"></i></button>
+			</div>
+
+		</div>
+
+		<div id="optionBar">
+			<div id="wizToggles">
+				<div class="form-check form-switch mb-0">
+					<input type="checkbox" class="form-check-input" id="autoFit" checked>
+					<label for="autoFit" class="form-check-label" title="Automatically shrink words that would otherwise not fit." data-bs-toggle="tooltip">Auto fit</label>
+				</div>
+
+				<div class="form-check form-switch mb-0">
+					<input type="checkbox" class="form-check-input" id="autoFill">
+					<label for="autoFill" class="form-check-label" title="Allow words to repeat: a small amount of words still fills the shape." data-bs-toggle="tooltip">Repeat words</label>
+				</div>
+			</div>
+
+			<div class="sep"></div>
+
+			<div><i id="zoomMin" class="fas fa-lg fa-minus-circle"></i></div>
+			<div id="wordZoom"></div>
+			<div><i id="zoomPlus" class="fas fa-lg fa-plus-circle"></i></div>
+
+			<div class="sep"></div>
+
+			<div title="Pause automatic rendering" data-bs-toggle="tooltip" class="position-relative">
+				<i class="fas fa-lg fa-pause" data-task="postponeRendering"></i>
+				<span id="postponeCount" class="badge rounded-pill bg-danger"></span>
+			</div>
+
+		</div><!--/#optionBar-->
+
+	</div><!--/#menuBar-->
+
+	<div id="canvasContainer" class="border bg-body">
+		<div id="wordcloudStatus" class="bg-body-secondary">
+			<div class="resolution" style="text-align:left">1024&times;1024px @ 100%</div>
+			<div class="renderInfo" style="text-align:right"></div>
+		</div>
+
+		<div id="canvasWrap" class="transparentBG">
+			<canvas id="wordcloudCanvas" width="1024" height="1024"></canvas>
+		</div>
+	</div><!--/#canvasContainer-->
+
+	<div>
+			<table class="shortcuts">
+	<tr>
+		<td class="text-right"><span class="label label-primary">-</span></td>
+		<td>Zoom out</td>
+		<td class="text-right"><span class="label label-primary">+</span></td>
+		<td>Zoom in</td>
+		<td class="text-right"><span class="label label-primary">Esc</span></td>
+		<td>Interrupt rendering</td>
+	</tr>
+	<tr>
+		<td class="text-right"><span class="label label-primary">&#8984;-Z</span></td>
+		<td>Undo</td>
+		<td class="text-right"><span class="label label-primary">&#8984;-Y</span></td>
+		<td>Redo</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="text-right"><span class="label label-primary">&#8984;-S</span></td>
+		<td>Download word cloud (JPG/PNG)</td>
+		<td class="text-right"><span class="label label-primary">&#8984;-P</span></td>
+		<td>Print word cloud</td>
+		<td class="text-right"><span class="label label-primary">&#8984;-L</span></td>
+		<td>Edit word list</td>
+	</tr>
+	</table>
+	</div>
+
+	<hr class="my-3">
+
+	<div class="container-fluid textBoxes">
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-4">
+				<b><i class="fa-solid fa-pencil"></i> Create Word Clouds</b>
+				<p>Paste words or text or upload a document to automatically generate a word cloud or tag cloud. You can also manually input individual word in the word list. Select your font, pick colors as a theme, determine the background and save the result back to your device.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<b><i class="fa-solid fa-brush"></i> Advanced Word Cloud functions</b>
+				<p>For advanced users, our word cloud maker has several versatile options. You can create word clouds in a shape, either use one of our shapes or upload your own shape. You can determine the direction and warps of your text to suit your needs. You can save the result to your device in an HD image format or save it as vector graphic (SVG).</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<b><i class="fa-solid fa-user-large-slash"></i> Free without registration</b>
+				<p>Wordclouds.com does not require you to register or to create an account. Our word cloud generator is completely free without any restrictions. You can use the word cloud image that you generate in any way you see fit.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<b><i class="fa-solid fa-lock"></i> Private and secure</b>
+				<p>Wordclouds.com does not store your data on our server. If you extract words from a document, we only temporarily store that document for the purpose of extracting words.  All your edits are processed by your browser, making this the most private and secure Word Clouds Generator.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<b><i class="fa-solid fa-hand-holding"></i> Simple to use</b>
+				<p>It is very simple to create word clouds. The word cloud maker works online on all devices and browsers and you do not need to install anything: just add text, create your word cloud and save the result back to your device.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<b><i class="fa-solid fa-keyboard"></i> Keyboard shortcuts</b>
+				<p>There are several keyboard shortcuts to speed up the creation of your word cloud. See the keyboard shortcuts legend above.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner bottom">
+		<!-- AdSense banner --><div class="adsbygoogle" style="display:inline-block;" data-ad-client="ca-pub-5029257013560698" data-ad-slot="1873262699"></div>
+	<!-- /AdSense banner -->	</div>
+
+</div><!--/.container-fluid-->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWordList">
+	<div class="offcanvas-header justify-content-between">
+		<h5 class="offcanvas-title">Words</h5>
+		<div>
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+	</div>
+	<div class="offcanvas-body">
+		<div class="btn-group btn-group-sm d-flex mb-3 btns-default" role="group">
+			<button type="button" class="btn btn-outline-primary multiBtn" data-bs-toggle="tooltip" title="Start multi-select"><i class="icon-select-all"></i></button>
+			<button type="button" class="btn btn-outline-primary addBtn" data-bs-toggle="tooltip" title="Add word"><i class="fas fa-plus"></i></button>
+			<button type="button" class="btn btn-outline-primary cloneBtn disabled needRow" data-bs-toggle="tooltip" title="Clone word" disabled><i class="far fa-clone"></i></button>
+			<button type="button" class="btn btn-outline-primary cloneAllBtn" data-bs-toggle="tooltip" title="Clone all words (@ 75%)"><i class="far fa-clone"></i> all</button>
+			<button type="button" class="btn btn-outline-primary delAllBtn" data-bs-toggle="tooltip" title="Delete all words"><i class="fas fa-trash"></i> all</button>
+			<button type="button" class="btn btn-outline-primary upperBtn" data-bs-toggle="tooltip" title="All words in UPPERCASE">UPPER</button>
+			<button type="button" class="btn btn-outline-primary lowerBtn" data-bs-toggle="tooltip" title="All words in lowercase">lower</button>
+		</div>
+		<div class="btn-group btn-group-sm d-none mb-3 btns-multiselect" role="group">
+			<button type="button" class="btn btn-outline-primary endMultiBtn" data-bs-toggle="tooltip" title="Stop multi-select"><i class="far fa-times-circle fa-lg"></i></button>
+			<button type="button" class="btn btn-outline-primary multiSelectAllBtn" data-bs-toggle="tooltip" title="Select all"><i class="icon-check-box"></i></button>
+			<button type="button" class="btn btn-outline-primary multiDeselectAllBtn" data-bs-toggle="tooltip" title="Deselect all"><i class="icon-clear-box"></i></button>
+			<button type="button" class="btn btn-outline-primary multiDelBtn" data-bs-toggle="tooltip" title="Delete selected words"><i class="fas fa-trash"></i></button>
+			<button type="button" class="btn btn-outline-primary multiCloneBtn" data-bs-toggle="tooltip" title="Clone selected words"><i class="far fa-clone"></i></button>
+		</div>
+
+		<!-- Central Word -->
+		<div>
+			<b>Central word</b>
+			<table class="table table-bordered centralWordTbl">
+			<tbody>
+				<tr class="odd" style="vertical-align:middle">
+					<td>
+						<i class="fas fa-trash-alt delWord ptr" title="Delete word"></i>
+					</td>
+					<td>
+						<input class="text w-100 border-0" type="text" placeholder="Enter a central word (optional)" spellcheck="false">
+					</td>
+					<td class="d-flex gap-1">
+						<div id="centralWordFontPicker"></div>
+						<div id="centralWordColorPicker" style="width:3rem"></div>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<!-- /Central Word -->
+
+		<div class="subMenu text-end border-top border-bottom mb-3">
+			Toggle column: <span id="wordColors"><a href="#" class="toggle-vis" data-column="3">Color</a> &middot;</span> <a href="#" class="toggle-vis" data-column="4">URL</a>
+		</div>
+
+		<table id="wordListTbl" class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<td style="width:1%"></td>
+					<td style="width:5%">Weight</td>
+					<td style="width:70%">Word</td>
+					<td>Color&nbsp;[hex]</td>
+					<td>URL</td>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div><!--/.offcanvas-body-->
+	<div class="offcanvas-footer d-flex gap-2 align-items-center">
+		<button class="applyBtn btn btn-primary">Apply</button>
+		<button class="closeBtn btn btn-link">Close</button>
+		<button class="ms-auto btn-peek"></button>
+	</div>
+</div>
+
+<div id="busyToast" class="hidden" style="display:none"><div>
+	<svg width="105" height="105" viewBox="0 0 105 105" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+		<circle cx="12.5" cy="12.5" r="12.5">
+			<animate attributeName="fill-opacity"
+			begin="0s" dur="1s"
+			values="1;.2;1" calcMode="linear"
+			repeatCount="indefinite" />
+		</circle>
+		<circle cx="12.5" cy="52.5" r="12.5" fill-opacity=".5">
+		<animate attributeName="fill-opacity"
+			begin="100ms" dur="1s"
+			values="1;.2;1" calcMode="linear"
+			repeatCount="indefinite" />
+		</circle>
+		<circle cx="52.5" cy="12.5" r="12.5">
+			<animate attributeName="fill-opacity"
+			begin="300ms" dur="1s"
+			values="1;.2;1" calcMode="linear"
+			repeatCount="indefinite" />
+		</circle>
+		<circle cx="52.5" cy="52.5" r="12.5">
+			<animate attributeName="fill-opacity"
+			begin="600ms" dur="1s"
+			values="1;.2;1" calcMode="linear"
+			repeatCount="indefinite" />
+		</circle>
+		<circle cx="92.5" cy="12.5" r="12.5">
+			<animate attributeName="fill-opacity"
+			begin="800ms" dur="1s"
+			values="1;.2;1" calcMode="linear"
+			repeatCount="indefinite" />
+		</circle>
+		<circle cx="92.5" cy="52.5" r="12.5">
+			<animate attributeName="fill-opacity"
+			begin="400ms" dur="1s"
+			values="1;.2;1" calcMode="linear"
+			repeatCount="indefinite" />
+		</circle>
+		<circle cx="12.5" cy="92.5" r="12.5">
+			<animate attributeName="fill-opacity"
+			begin="700ms" dur="1s"
+			values="1;.2;1" calcMode="linear"
+			repeatCount="indefinite" />
+		</circle>
+		<circle cx="52.5" cy="92.5" r="12.5">
+			<animate attributeName="fill-opacity"
+			begin="500ms" dur="1s"
+			values="1;.2;1" calcMode="linear"
+			repeatCount="indefinite" />
+		</circle>
+		<circle cx="92.5" cy="92.5" r="12.5">
+			<animate attributeName="fill-opacity"
+			begin="200ms" dur="1s"
+			values="1;.2;1" calcMode="linear"
+			repeatCount="indefinite" />
+		</circle>
+	</svg>
+	<span class="msg">Rendering</span>&hellip;
+	<button type="button" class="btn btn-primary">Stop</button>
+	<div class="progress" style="height:2px;margin-top:1em">
+		<div class="progress-bar" role="progressbar"></div>
+	</div>
+</div></div>
+
+
+<footer class="footer bg-body-tertiary px-2 mt-auto border-top">
+	<div class="container-fluid">
+		<div class="row py-2">
+
+			<div class="col-md-5">
+				<ul class="nav justify-content-center justify-content-md-start">
+					<li>
+						<a class="nav-link" href="/contact/">Contact</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/privacy/">Privacy</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/about/">About us</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-md-2 d-flex align-items-center justify-content-center gap-3">
+				<a class="nav-link" data-social="twitter" title="Share WordClouds on X" href="#">
+					<i class="fab fa-x-twitter fa-lg"></i>
+				</a>
+				<a class="nav-link" data-social="facebook" title="Share WordClouds on Facebook" href="#">
+					<i class="fab fa-facebook fa-lg"></i>
+				</a>
+				<a class="nav-link" data-social="pinterest" title="Share WordClouds on Instagram" href="#">
+					<i class="fab fa-pinterest fa-lg"></i>
+				</a>
+			</div>
+
+			<div class="col-md-5 d-flex align-items-center justify-content-center justify-content-md-end">
+				<div class="text-md-start">
+				&copy; 2026. Made with <i class="fas fa-heart heart"></i> by <a href="https://www.zygomatic.nl" target="_blank">Zygomatic</a>.
+				</div>
+			</div>
+
+		</div>
+	</div>
+</footer>
+<template id="shapeShifterTmpl">
+	<div class="toolbar p-2">
+		<div class="d-flex gap-3 align-items-center pb-1 border-bottom border-1 border-primary">
+			<h4 class="m-0">ShapeShifter</h4>
+			<div>Move and resize the shape as desired.</div>
+		</div>
+		<div class="nav navbar mt-1">
+			<div class="btn-group">
+				<button class="btn btn-outline-primary centerBtn" title="Center shape" data-bs-toggle="tooltip"><i class="fa-solid fa-arrows-to-circle"></i></button>
+				<button type="button" class="btn btn-outline-primary maximizeBtn" title="Maximize" data-bs-toggle="tooltip"><i class="fa-solid fa-maximize"></i></button>
+				<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+				<ul class="dropdown-menu">
+					<li><button class="dropdown-item" data-padding="10">padding 10px</button></li>
+					<li><button class="dropdown-item" data-padding="20">padding 20px</button></li>
+					<li><button class="dropdown-item" data-padding="30">padding 30px</button></li>
+					<li><button class="dropdown-item" data-padding="40">padding 40px</button></li>
+					<li><button class="dropdown-item" data-padding="50">padding 50px</button></li>
+					<li><button class="dropdown-item" data-padding="100">padding 100px</button></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<button class="btn btn-outline-primary flipVertical" title="Flip vertically" data-bs-toggle="tooltip"><i class="fa-solid fa-up-down"></i></button>
+				<button class="btn btn-outline-primary flipHorizontal" title="Flip horizontally" data-bs-toggle="tooltip"><i class="fa-solid fa-left-right"></i></button>
+				<button class="btn btn-outline-primary rotateLeft" title="Rotate left" data-bs-toggle="tooltip"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+				<button class="btn btn-outline-primary rotateRight" title="Rotate right" data-bs-toggle="tooltip"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+			</div>
+
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="on" id="keepAspect">
+				<label class="form-check-label" for="keepAspect">Keep aspect</label>
+			</div>
+
+			<div class="cropInfo" style="width:20%"></div>
+
+			<div class="d-flex gap-2">
+				<button class="btn btn-primary applyBtn">Apply</button>
+				<button class="btn btn-link cancelBtn">Cancel</button>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template id="drawShapeTmpl">
+	<div class="toolbar p-2">
+		<div class="d-flex gap-3 align-items-center pb-1 border-bottom border-1 border-primary">
+			<h4 class="m-0">Draw shape</h4>
+			<div>
+				Draw a word cloud shape on the canvas.				<i class="fa-solid fa-circle-info" style="cursor:pointer" data-bs-toggle="popover" data-bs-title="Draw Shape Help" data-bs-content="Click on the canvas below to create points that make a path. Click a point to delete it. Close the path to create a shape. Create as many shapes as you need. Click Apply when done."></i>
+			</div>
+		</div>
+		<div class="nav navbar mt-1">
+
+			<button class="btn btn-outline-primary clearBtn" data-bs-toggle="tooltip">Clear</button>
+
+			<div class="d-flex gap-2">
+				<button class="btn btn-primary applyBtn">Apply</button>
+				<button class="btn btn-link cancelBtn">Cancel</button>
+			</div>
+		</div>
+	</div>
+</template>
+
+<div class="modal fade" id="wizardModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title">Word cloud wizard</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+      <div class="modal-body toolControls">
+			<div class="container">
+				<p>Quickly generate your word cloud with your own words and some basic settings, after drawing your word cloud you can further customize it.</p>
+				<textarea class="form-control text" rows="5" placeholder="Type or paste some text."></textarea>
+				<div class="row mt-2">
+					<div class="col-12 col-md-4">
+						<fieldset>
+							<legend>Shape</legend>
+							<div class="scroller shapeList" style="margin:0 -1em">
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-12 col-md-4">
+						<fieldset>
+							<legend>Theme</legend>
+							<div class="scroller themeList"></div>
+						</fieldset>
+					</div>
+
+					<div class="col-12 col-md-4">
+						<fieldset>
+							<legend>Font</legend>
+							<div class="scroller fontList">
+								<div style="font-family:'Pacifico'">Pacifico</div>
+								<div style="font-family:'Dosis'">Dosis</div>
+								<div style="font-family:'IBM Plex Sans'">IBM Plex Sans</div>
+								<div style="font-family:'IBM Plex Serif'">IBM Plex Serif</div>
+								<div style="font-family:'Recursive'">Recursive</div>
+								<div style="font-family:'Righteous'">Righteous</div>
+								<div style="font-family:'Londrina Solid'">Londrina Solid</div>
+								<div style="font-family:'Paytone One'">Paytone One</div>
+								<div style="font-family:'Titan One'">Titan One</div>
+								<div style="font-family:'Alfa Slab One'">Alfa Slab One</div>
+								<div style="font-family:'Cherry Bomb One'">Cherry Bomb One</div>
+								<div style="font-family:'Bowlby One'">Bowlby One</div>
+								<div style="font-family:'Russo One'">Russo One</div>
+							</div>
+						</fieldset>
+					</div>
+
+				</div>
+			</div><!--/.container-->
+
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary submitBtn">Draw word cloud</button>
+		</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
